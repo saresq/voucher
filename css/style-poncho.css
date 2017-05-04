@@ -21,7 +21,6 @@
 .wpcf7-form-control {
   width: 100%;
   margin-bottom: 10px;
-  height: 30px;
   font-size: 14px
 }
 
@@ -297,6 +296,14 @@ nav.stick {
   .borde-izq {
     border-left: 0
   }
+  .voucherCantidad {
+    bottom: 50px;
+    position: absolute;
+    right: 15;
+  }
+  .voucherDescripcion{
+    margin-top: 1.5rem;
+  }
 }
 
 @media (min-width:768px) {
@@ -549,4 +556,44 @@ a.unlink {
 .imgCenter {
   display: block;
   margin: auto;
+}
+
+
+/* CSS de historiales de vouchers. */
+
+.btn-agregar {
+  padding: 2px 15px !important;
+}
+
+.btn-agregar .fa-plus-circle {
+  margin-right: 5px;
+}
+
+.bg-goscuro {
+  background-color: #838383;
+}
+
+.debold {
+  font-weight: normal;
+}
+
+.v-middle {
+  vertical-align: middle;
+}
+
+
+/* fin css historiales de voucher*/
+
+.voucher {
+  padding: 1rem;
+  border-bottom: 2px solid #f7f7f7;
+  border-radius: 4px;
+}
+
+.voucher:first-child {
+  margin-top: 1.5rem
+}
+
+.voucher:last-child {
+  margin-bottom: 1.5rem;
 }
