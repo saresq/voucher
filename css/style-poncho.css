@@ -63,6 +63,11 @@ html {
   align-items: center;
   justify-content: center
 }
+.aligner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 .video-flex {
   position: static
