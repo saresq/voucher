@@ -54,6 +54,7 @@ html {
   overflow-x: hidden
 }
 
+
 /*input {
   color: #000!important
 }*/
@@ -63,6 +64,7 @@ html {
   align-items: center;
   justify-content: center
 }
+
 .aligner {
   display: flex;
   align-items: center;
@@ -497,8 +499,11 @@ a img.aligncenter {
   right: 40px;
 }
 
+
+/*Saca atributos de color a tags a*/
+
 a.unlink {
-  color: #666 !important;
+  color: #333 !important;
   text-decoration: none;
 }
 
@@ -508,7 +513,7 @@ a.unlink {
   height: 50px;
   padding-top: 15px;
   text-align: center;
-  border-radius: 110px;
+  border-radius: 50%;
   font-weight: bold;
 }
 
@@ -521,16 +526,27 @@ a.unlink {
   padding-left: 5px;
 }
 
-.bg-gclaro{
+
+/*Los nombres va a haber que cambiarlos pero son los nuevos colores de Background planteados por Clari*/
+
+.bg-gclaro {
   background-color: #f7f7f7;
 }
 
-.bg-white{
+.bg-white {
   background-color: #ffffff;
 }
 
-.btn-slim{
+
+/*Fin colores nuevos*/
+
+.btn-slim {
   font-size: 14px;
   font-weight: 200;
   padding: 5;
+}
+
+.imgCenter {
+  display: block;
+  margin: auto;
 }
