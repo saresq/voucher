@@ -95,7 +95,9 @@
 
             <ul class="menuLista">
               <li>
-                <a class="unlink" data-toggle="collapse" href="#toggleLorem">Lorem</a>
+                <a class="unlink" data-toggle="collapse" href="#toggleLorem">
+                  <i class="fa fa-caret-down menuListaIco"></i> Lorem
+                </a>
                 <!-- Cuando el ul tiene clase "in"- por defecto aparecera visible, de otro modo estara oculta hasta que no se lleme a data-toggle -->
                 <ul class="menuLista collapse in" id="toggleLorem">
                   <li><a>ipsum</a></li>
@@ -327,6 +329,12 @@
     $(function() {
       $('[data-toggle="popover"]').popover()
     })
+
+    $('.collapse').on('shown.bs.collapse', function() {
+      $(this).parent().find(".fa-caret-right").removeClass("fa-caret-right").addClass("fa-caret-down");
+    }).on('hidden.bs.collapse', function() {
+      $(this).parent().find(".fa-caret-down").removeClass("fa-caret-down").addClass("fa-caret-right");
+    });
   </script>
 </body>
 

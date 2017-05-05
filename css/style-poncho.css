@@ -1,29 +1,36 @@
 /*Emparche de las faltas de Poncho*/
 
-.menuLista{
+.menuLista {
   list-style: none;
   padding-left: 1rem;
 }
 
-.menuLista > li{
+.menuLista>li {
   font-size: 16px;
 }
 
-.menuLista > li > ul {
+.menuLista>li>ul {
   padding-left: 1rem;
 }
 
-.menuLista > a, .menuLista > ul > a, .menuLista > li > a, .menuLista > li > ul > a {
+.menuLista>a, .menuLista>ul>a, .menuLista>li>a, .menuLista>li>ul>a {
   color: #333;
   text-decoration: none;
   font-weight: 400;
 }
 
-.menuInput{
+.menuListaIco {
+  position: absolute;
+  left: 1.1rem;
+  font-size: 18px;
+  padding-top: 0.1rem;
+}
+
+.menuInput {
   width: 10rem;
 }
 
-.menuInputChico{
+.menuInputChico {
   width: 5rem;
   font-size: 14px;
   float: left;
@@ -31,15 +38,14 @@
 
 .menuSearchIco {
   position: absolute;
-    top: 0.45em;
-    left: 9rem;
-    z-index: 2;
-    width: 34px;
-    height: 34px;
-    line-height: 34px;
-    text-align: center;
+  top: 0.45em;
+  left: 9rem;
+  z-index: 2;
+  width: 34px;
+  height: 34px;
+  line-height: 34px;
+  text-align: center;
 }
-
 
 .btn-primary, .navbar-default, .navbar-nav>li>.dropdown-menu>li>a, .panel-default>.panel-heading {
   background-image: none
@@ -634,6 +640,39 @@ a.unlink {
   align-items: center;
 }
 
+.tabla-vouchers .fa {
+ font-size:22px;
+}
+
+.instructivo-vouchers .fa {
+ font-size:80px;
+}
+
+.instructivo-vouchers .fa-usd {
+ font-size: 56px;
+ margin-top: -23px;
+}
+
+.instructivo-vouchers img {
+ height:80px;
+}
+
+.instructivo-vouchers span.fa-stack{
+ height:80px;
+}
+
+.alert-verde {
+ padding:5px;
+}
+
+.alert-verde .fa {
+ color:#111;
+ font-size:40px;
+}
+
+.mb-5{
+ margin-bottom:5px !important;
+}
 
 /* fin css historiales de voucher*/
 
