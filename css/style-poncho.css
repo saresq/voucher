@@ -1,3 +1,10 @@
+/*Emparche de las faltas de Poncho*/
+
+.porfi{
+  color: red;
+}
+
+
 .btn-primary, .navbar-default, .navbar-nav>li>.dropdown-menu>li>a, .panel-default>.panel-heading {
   background-image: none
 }
@@ -301,7 +308,7 @@ nav.stick {
     position: absolute;
     right: 15;
   }
-  .voucherDescripcion{
+  .voucherDescripcion {
     margin-top: 1.5rem;
   }
 }
@@ -582,13 +589,13 @@ a.unlink {
 }
 
 .alert-contacto {
- background-color: #0695d6;
+  background-color: #0695d6;
 }
 
 .alert-contacto .alert {
- height:130px;
- display:flex;
- align-items: center;
+  height: 130px;
+  display: flex;
+  align-items: center;
 }
 
 
