@@ -581,6 +581,16 @@ a.unlink {
   vertical-align: middle;
 }
 
+.alert-contacto {
+ background-color: #0695d6;
+}
+
+.alert-contacto .alert {
+ height:130px;
+ display:flex;
+ align-items: center;
+}
+
 
 /* fin css historiales de voucher*/
 
