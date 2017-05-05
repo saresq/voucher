@@ -1,7 +1,43 @@
 /*Emparche de las faltas de Poncho*/
 
-.porfi{
-  color: red;
+.menuLista{
+  list-style: none;
+  padding-left: 1rem;
+}
+
+.menuLista > li{
+  font-size: 16px;
+}
+
+.menuLista > li > ul {
+  padding-left: 1rem;
+}
+
+.menuLista > a, .menuLista > ul > a, .menuLista > li > a, .menuLista > li > ul > a {
+  color: #333;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.menuInput{
+  width: 10rem;
+}
+
+.menuInputChico{
+  width: 5rem;
+  font-size: 14px;
+  float: left;
+}
+
+.menuSearchIco {
+  position: absolute;
+    top: 0.45em;
+    left: 9rem;
+    z-index: 2;
+    width: 34px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
 }
 
 
