@@ -641,40 +641,44 @@ a.unlink {
 }
 
 .tabla-vouchers .fa {
- font-size:22px;
+  font-size: 22px;
 }
 
 .instructivo-vouchers .fa {
- font-size:80px;
+  font-size: 80px;
 }
 
 .instructivo-vouchers .fa-usd {
- font-size: 56px;
- margin-top: -23px;
+  font-size: 56px;
+  margin-top: -23px;
 }
 
 .instructivo-vouchers img {
- height:80px;
+  height: 80px;
 }
 
-.instructivo-vouchers span.fa-stack{
- height:80px;
+.instructivo-vouchers span.fa-stack {
+  height: 80px;
 }
 
 .alert-verde {
- padding:5px;
+  padding: 5px;
 }
 
 .alert-verde .fa {
- color:#111;
- font-size:40px;
+  color: #111;
+  font-size: 40px;
 }
 
-.mb-5{
- margin-bottom:5px !important;
+.mb-5 {
+  margin-bottom: 5px !important;
 }
+
 
 /* fin css historiales de voucher*/
+
+
+/*Arreglos para voucherLista*/
 
 .voucher {
   padding: 1rem;
@@ -688,4 +692,19 @@ a.unlink {
 
 .voucher:last-child {
   margin-bottom: 1.5rem;
+}
+
+.ayudaModal {
+  position: absolute;
+  bottom: 5;
+  right: 20;
+}
+
+
+/*fin voucherLista*/
+
+/*home*/
+
+.voucher-beneficios .fa {
+ font-size:80px;
 }
