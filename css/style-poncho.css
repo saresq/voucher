@@ -585,12 +585,20 @@ a.unlink {
 
 /*Los nombres va a haber que cambiarlos pero son los nuevos colores de Background planteados por Clari*/
 
+.bg-gris{
+  background-color: #e9e9e9 !important;
+}
+
 .bg-gclaro {
-  background-color: #f7f7f7;
+  background-color: #f7f7f7 !important;
+}
+
+.bg-celeste{
+  background-color: #daf1f8 !important;
 }
 
 .bg-white {
-  background-color: #ffffff;
+  background-color: #ffffff !important;
 }
 
 
@@ -616,10 +624,6 @@ a.unlink {
 
 .btn-agregar .fa-plus-circle {
   margin-right: 5px;
-}
-
-.bg-goscuro {
-  background-color: #838383;
 }
 
 .debold {
@@ -703,8 +707,50 @@ a.unlink {
 
 /*fin voucherLista*/
 
+
 /*home*/
 
 .voucher-beneficios .fa {
- font-size:70px;
+  font-size: 70px;
+}
+/**/
+
+.bg-palta {
+  background-color: #a8cd00 !important;
+}
+
+.text-palta {
+  color: #a8cd00;
+}
+
+.bg-turquesa {
+  background-color: #24bb9c !important;
+}
+
+.text-turquesa {
+  color: #24bb9c;
+}
+
+.bg-rosa {
+  background-color: #ff6363 !important;
+}
+
+.text-rosa {
+  color: #ff6363;
+}
+
+.bg-naranja {
+  background-color: #f7872f !important;
+}
+
+.text-naranja {
+  color: #f7872f;
+}
+
+.bg-violeta {
+  background-color: #7e62b3 !important;
+}
+
+.text-violeta {
+  color: #7e62b3;
 }
