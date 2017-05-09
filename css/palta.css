@@ -1,111 +1,10 @@
-/*Emparche de las faltas de Poncho*/
-
-.menuLista {
-  list-style: none;
-  padding-left: 1rem;
-}
-
-.menuLista>li {
-  font-size: 16px;
-}
-
-.menuLista>li>ul {
-  padding-left: 1rem;
-}
-
-.menuLista>a, .menuLista>ul>a, .menuLista>li>a, .menuLista>li>ul>a {
-  color: #333;
-  text-decoration: none;
-  font-weight: 400;
-}
-
-.menuListaIco {
-  position: absolute;
-  left: 1.1rem;
-  font-size: 18px;
-  padding-top: 0.1rem;
-}
-
-.menuInput {
-  width: 10rem;
-}
-
-.menuInputChico {
-  width: 5rem;
-  font-size: 14px;
-  float: left;
-}
-
-.menuSearchIco {
-  position: absolute;
-  top: 0.45em;
-  left: 9rem;
-  z-index: 2;
-  width: 34px;
-  height: 34px;
-  line-height: 34px;
-  text-align: center;
-}
-
-.btn-primary, .navbar-default, .navbar-nav>li>.dropdown-menu>li>a, .panel-default>.panel-heading {
-  background-image: none
-}
-
-.navbar .navbar-brand {
-  padding: 10px 0
-}
-
-.form-group input {
-  color: #111!important
-}
-
-.alert-success, .alert-warning {
-  color: #333!important
-}
-
-.wpcf7-submit {
-  height: 54px!important
-}
-
-.wpcf7-form-control {
-  width: 100%;
-  margin-bottom: 10px;
-  font-size: 14px
-}
-
-.wpcf7-list-item {
-  display: block
-}
-
-.wpcf7-captchac {
-  height: 40px
-}
-
-.iconoTexto img, .panelIcono img {
-  height: 80px;
-  max-width: 50%
-}
-
-.wpcf7-text {
-  color: #111!important
-}
-
-.contentFormat {
-  padding-top: 0!important
-}
-
-.contentFormat h2, .contentFormat h3, .contentFormat h4, .contentFormat h5, .contentFormat h6 {
-  margin-top: 2em
-}
+/*FIXES GENERALES*/
 
 html {
   overflow-x: hidden
 }
 
-
-/*input {
-  color: #000!important
-}*/
+/*FIXES A STYLES.CSS*/
 
 .video-row {
   display: flex;
@@ -129,12 +28,6 @@ html {
 
 .numberdiv {
   flex-flow: column
-}
-
-@media (max-width:767px) {
-  .video-row {
-    flex-flow: column
-  }
 }
 
 .iconoTexto, .panelIcono {
@@ -195,229 +88,14 @@ article a {
   text-decoration: none
 }
 
-.row:after, .row:before {
-  width: 0;
-  content: ""
-}
-
 .navbar .navbar-brand img {
   max-height: 100%
-}
-
-@media (max-width:575px) {
-  .hidden-xs-down {
-    display: none!important
-  }
-}
-
-@media (min-width:576px) {
-  .hidden-sm-up {
-    display: none!important
-  }
-}
-
-@media (max-width:767px) {
-  .hidden-sm-down {
-    display: none!important
-  }
-}
-
-@media (min-width:768px) {
-  .hidden-md-up {
-    display: none!important
-  }
-}
-
-@media (max-width:991px) {
-  .hidden-md-down {
-    display: none!important
-  }
-}
-
-@media (min-width:992px) {
-  .hidden-lg-up {
-    display: none!important
-  }
-}
-
-@media (max-width:1199px) {
-  .hidden-lg-down {
-    display: none!important
-  }
-}
-
-@media (min-width:1200px) {
-  .hidden-xl-up {
-    display: none!important
-  }
-}
-
-@media print {
-  .visible-print-block {
-    display: block!important
-  }
-}
-
-.visible-print-inline {
-  display: none!important
-}
-
-@media print {
-  .visible-print-inline {
-    display: inline!important
-  }
-}
-
-.visible-print-inline-block {
-  display: none!important
-}
-
-@media print {
-  .visible-print-inline-block {
-    display: inline-block!important
-  }
-  .hidden-print {
-    display: none!important
-  }
 }
 
 img.img-responsive {
   max-height: none!important;
   min-height: none!important
 }
-
-#htmlCode {
-  user-select: all;
-  background: #202020;
-  color: #fff;
-  font-family: monospace;
-  padding: 5em;
-  margin: 0;
-  border-style: none;
-  border-radius: 0
-}
-
-nav#side-nav {
-  padding: 40px 0;
-  width: 300px
-}
-
-nav.stick {
-  position: fixed;
-  top: 0;
-  z-index: 10000;
-  margin-top: 12px
-}
-
-.map {
-  -webkit-filter: grayscale(70%);
-  -moz-filter: grayscale(70%);
-  -ms-filter: grayscale(70%);
-  -o-filter: grayscale(70%);
-  filter: grayscale(70%)
-}
-
-.maps {
-  height: 60vh;
-  overflow: hidden
-}
-
-.maps iframe {
-  pointer-events: none
-}
-
-.table-row {
-  display: table-row;
-  background-color: rgba(6, 149, 214, .7)
-}
-
-.table-row .table-cell {
-  display: table-cell
-}
-
-@media (max-width:768px) {
-  .table-cell {
-    float: left
-  }
-  .borde-der {
-    border-right: 0
-  }
-  .borde-izq {
-    border-left: 0
-  }
-  .voucherCantidad {
-    bottom: 50px;
-    position: absolute;
-    right: 15;
-  }
-  .voucherDescripcion {
-    margin-top: 1.5rem;
-  }
-}
-
-@media (min-width:768px) {
-  .table-cell {
-    float: none
-  }
-  .borde-der {
-    border-right: 2px solid #fff
-  }
-  .borde-izq {
-    border-left: 2px solid #fff
-  }
-}
-
-.text-uppercase {
-  text-transform: uppercase!important
-}
-
-.carouselBotons {
-  position: absolute;
-  top: 40%
-}
-
-.carousel-inner .item>img {
-  display: block;
-  object-fit: cover;
-  width: 100%;
-  height: 60vh
-}
-
-.flex {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 50vh;
-  width: 100%
-}
-
-@media (min-width:1024px) {
-  .overlap {
-    background: #F9F9F9;
-    border-radius: 4px;
-    box-sizing: content-box;
-    left: -60px;
-    margin-top: -60px;
-    padding: 0 60px;
-    position: relative
-  }
-}
-
-.filter {
-  font-size: 20px;
-  color: #B9B1B1;
-  padding-top: 15px;
-  font-weight: 700
-}
-
-.btn-lupa {
-  padding: 5px 15px!important;
-  border: none!important;
-  border-radius: 4px!important;
-  height: 30px!important;
-  outline: 0!important
-}
-
 .social-share {
   margin: 0;
   min-height: 32px
@@ -477,6 +155,257 @@ a img.aligncenter {
 }
 
 
+/*FIXES DE SAFARI*/
+.row:after, .row:before {
+  width: 0;
+  content: ""
+}
+
+/*MOBILE FIXES*/
+@media (max-width:767px) {
+  .video-row {
+    flex-flow: column
+  }
+}
+
+/*HEADER*/
+.menuLista {
+  list-style: none;
+  padding-left: 1rem;
+}
+
+.menuLista>li {
+  font-size: 16px;
+}
+
+.menuLista>li>ul {
+  padding-left: 1rem;
+}
+
+.menuLista>a, .menuLista>ul>a, .menuLista>li>a, .menuLista>li>ul>a {
+  color: #333;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.menuListaIco {
+  position: absolute;
+  left: 1.1rem;
+  font-size: 18px;
+  padding-top: 0.1rem;
+}
+
+.menuInput {
+  width: 10rem;
+}
+
+.menuInputChico {
+  width: 5rem;
+  font-size: 14px;
+  float: left;
+}
+
+.menuSearchIco {
+  position: absolute;
+  top: 0.45em;
+  left: 9rem;
+  z-index: 2;
+  width: 34px;
+  height: 34px;
+  line-height: 34px;
+  text-align: center;
+}
+
+.btn-primary, .navbar-default, .navbar-nav>li>.dropdown-menu>li>a, .panel-default>.panel-heading {
+  background-image: none
+}
+
+.navbar .navbar-brand {
+  padding: 10px 0
+}
+
+/*CONTACT FORM 7*/
+
+.form-group input {
+  color: #111!important
+}
+
+.alert-success, .alert-warning {
+  color: #333!important
+}
+
+.wpcf7-submit {
+  height: 54px!important
+}
+
+.wpcf7-form-control {
+  width: 100%;
+  margin-bottom: 10px;
+  font-size: 14px
+}
+
+.wpcf7-list-item {
+  display: block
+}
+
+.wpcf7-captchac {
+  height: 40px
+}
+
+.iconoTexto img, .panelIcono img {
+  height: 80px;
+  max-width: 50%
+}
+
+.wpcf7-text {
+  color: #111!important
+}
+
+.contentFormat {
+  padding-top: 0!important
+}
+
+.contentFormat h2, .contentFormat h3, .contentFormat h4, .contentFormat h5, .contentFormat h6 {
+  margin-top: 2em
+}
+
+
+/*PONCHOBOT*/
+#htmlCode {
+  user-select: all;
+  background: #202020;
+  color: #fff;
+  font-family: monospace;
+  padding: 5em;
+  margin: 0;
+  border-style: none;
+  border-radius: 0
+}
+
+nav#side-nav {
+  padding: 40px 0;
+  width: 300px
+}
+
+nav.stick {
+  position: fixed;
+  top: 0;
+  z-index: 10000;
+  margin-top: 12px
+}
+
+/*MAP*/
+.map {
+  -webkit-filter: grayscale(70%);
+  -moz-filter: grayscale(70%);
+  -ms-filter: grayscale(70%);
+  -o-filter: grayscale(70%);
+  filter: grayscale(70%)
+}
+
+.maps {
+  height: 60vh;
+  overflow: hidden
+}
+
+.maps iframe {
+  pointer-events: none
+}
+
+/*TABLE*/
+.table-row {
+  display: table-row;
+  background-color: rgba(6, 149, 214, .7)
+}
+
+.table-row .table-cell {
+  display: table-cell
+}
+
+@media (max-width:768px) {
+  .table-cell {
+    float: left
+  }
+  .borde-der {
+    border-right: 0
+  }
+  .borde-izq {
+    border-left: 0
+  }
+  .voucherCantidad {
+    bottom: 50px;
+    position: absolute;
+    right: 15;
+  }
+  .voucherDescripcion {
+    margin-top: 1.5rem;
+  }
+}
+
+@media (min-width:768px) {
+  .table-cell {
+    float: none
+  }
+  .borde-der {
+    border-right: 2px solid #fff
+  }
+  .borde-izq {
+    border-left: 2px solid #fff
+  }
+}
+
+/*CAROUSEL*/
+.carouselBotons {
+  position: absolute;
+  top: 40%
+}
+
+.carousel-inner .item>img {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+  height: 60vh
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh;
+  width: 100%
+}
+
+.text-uppercase {
+  text-transform: uppercase!important
+}
+
+@media (min-width:1024px) {
+  .overlap {
+    background: #F9F9F9;
+    border-radius: 4px;
+    box-sizing: content-box;
+    left: -60px;
+    margin-top: -60px;
+    padding: 0 60px;
+    position: relative
+  }
+}
+
+.filter {
+  font-size: 20px;
+  color: #B9B1B1;
+  padding-top: 15px;
+  font-weight: 700
+}
+
+.btn-lupa {
+  padding: 5px 15px!important;
+  border: none!important;
+  border-radius: 4px!important;
+  height: 30px!important;
+  outline: 0!important
+}
+
 /* Overlap Div para Plantilla Noticia*/
 
 @media (min-width: 1024px) {
@@ -506,6 +435,8 @@ a img.aligncenter {
   outline: 0px !important;
 }
 
+
+/*ESTO NO ES SCSS?*/
 .social-share {
   margin: 0;
   min-height: 32px;
@@ -582,27 +513,6 @@ a.unlink {
   padding-left: 5px;
 }
 
-
-/*Los nombres va a haber que cambiarlos pero son los nuevos colores de Background planteados por Clari*/
-
-.bg-gris{
-  background-color: #e9e9e9 !important;
-}
-
-.bg-gclaro {
-  background-color: #f7f7f7 !important;
-}
-
-.bg-celeste{
-  background-color: #daf1f8 !important;
-}
-
-.bg-white {
-  background-color: #ffffff !important;
-}
-
-
-/*Fin colores nuevos*/
 
 .btn-slim {
   font-size: 14px;
@@ -704,16 +614,35 @@ a.unlink {
   right: 20;
 }
 
-
-/*fin voucherLista*/
-
-
 /*home*/
 
 .voucher-beneficios .fa {
   font-size: 70px;
 }
-/**/
+
+
+/*fin voucherLista*/
+
+
+
+/*PALETA DE COLORES*/
+/*Los nombres va a haber que cambiarlos pero son los nuevos colores de Background planteados por Clari*/
+
+.bg-gris{
+  background-color: #e9e9e9 !important;
+}
+
+.bg-gclaro {
+  background-color: #f7f7f7 !important;
+}
+
+.bg-celeste{
+  background-color: #daf1f8 !important;
+}
+
+.bg-white {
+  background-color: #ffffff !important;
+}
 
 .bg-palta {
   background-color: #a8cd00 !important;
@@ -753,4 +682,84 @@ a.unlink {
 
 .text-violeta {
   color: #7e62b3;
+}
+
+
+/*FUNCIONES DE BOOTSTRAP V4*/
+
+@media (max-width:575px) {
+  .hidden-xs-down {
+    display: none!important
+  }
+}
+
+@media (min-width:576px) {
+  .hidden-sm-up {
+    display: none!important
+  }
+}
+
+@media (max-width:767px) {
+  .hidden-sm-down {
+    display: none!important
+  }
+}
+
+@media (min-width:768px) {
+  .hidden-md-up {
+    display: none!important
+  }
+}
+
+@media (max-width:991px) {
+  .hidden-md-down {
+    display: none!important
+  }
+}
+
+@media (min-width:992px) {
+  .hidden-lg-up {
+    display: none!important
+  }
+}
+
+@media (max-width:1199px) {
+  .hidden-lg-down {
+    display: none!important
+  }
+}
+
+@media (min-width:1200px) {
+  .hidden-xl-up {
+    display: none!important
+  }
+}
+
+@media print {
+  .visible-print-block {
+    display: block!important
+  }
+}
+
+.visible-print-inline {
+  display: none!important
+}
+
+@media print {
+  .visible-print-inline {
+    display: inline!important
+  }
+}
+
+.visible-print-inline-block {
+  display: none!important
+}
+
+@media print {
+  .visible-print-inline-block {
+    display: inline-block!important
+  }
+  .hidden-print {
+    display: none!important
+  }
 }
