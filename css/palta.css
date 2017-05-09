@@ -4,6 +4,7 @@ html {
   overflow-x: hidden
 }
 
+
 /*FIXES A STYLES.CSS*/
 
 .video-row {
@@ -96,6 +97,7 @@ img.img-responsive {
   max-height: none!important;
   min-height: none!important
 }
+
 .social-share {
   margin: 0;
   min-height: 32px
@@ -156,19 +158,24 @@ a img.aligncenter {
 
 
 /*FIXES DE SAFARI*/
+
 .row:after, .row:before {
   width: 0;
   content: ""
 }
 
+
 /*MOBILE FIXES*/
+
 @media (max-width:767px) {
   .video-row {
     flex-flow: column
   }
 }
 
+
 /*HEADER*/
+
 .menuLista {
   list-style: none;
   padding-left: 1rem;
@@ -224,6 +231,37 @@ a img.aligncenter {
   padding: 10px 0
 }
 
+a.navMuted {
+  color: #333 !important;
+  text-decoration: none;
+}
+
+a.navMuted:hover, .navMuted:focus {
+  color: #fff !important;
+}
+
+@media (min-width:768px) {
+  .navIco {
+    position: absolute;
+    top: 20px;
+    font-size: 2em;
+  }
+  .navIco:hover, .navIco:focus {
+    color: #0695d6;
+  }
+}
+
+@media (max-width:768px) {
+  .navIco {
+    padding-left: 10px;
+    font-size: 1.5em;
+  }
+  .navIco:hover, .navIco:focus {
+    color: #0695d6;
+  }
+}
+
+
 /*CONTACT FORM 7*/
 
 .form-group input {
@@ -271,6 +309,7 @@ a img.aligncenter {
 
 
 /*PONCHOBOT*/
+
 #htmlCode {
   user-select: all;
   background: #202020;
@@ -294,7 +333,9 @@ nav.stick {
   margin-top: 12px
 }
 
+
 /*MAP*/
+
 .map {
   -webkit-filter: grayscale(70%);
   -moz-filter: grayscale(70%);
@@ -312,7 +353,9 @@ nav.stick {
   pointer-events: none
 }
 
+
 /*TABLE*/
+
 .table-row {
   display: table-row;
   background-color: rgba(6, 149, 214, .7)
@@ -354,7 +397,9 @@ nav.stick {
   }
 }
 
+
 /*CAROUSEL*/
+
 .carouselBotons {
   position: absolute;
   top: 40%
@@ -406,6 +451,7 @@ nav.stick {
   outline: 0!important
 }
 
+
 /* Overlap Div para Plantilla Noticia*/
 
 @media (min-width: 1024px) {
@@ -433,38 +479,6 @@ nav.stick {
   border-radius: 4px !important;
   height: 30px !important;
   outline: 0px !important;
-}
-
-
-/*ESTO NO ES SCSS?*/
-.social-share {
-  margin: 0;
-  min-height: 32px;
-  p {
-    color: $gray;
-    float: left;
-    line-height: 1.2;
-    margin-bottom: 0;
-    margin-top: 8px;
-  }
-  span {
-    color: $gray;
-  }
-  ul {
-    float: left;
-    margin: 5px 10px 5px 5px;
-  }
-  li {
-    border-radius: 4px;
-    margin: 0;
-    padding: 6px;
-    &:hover {
-      background: $brand-primary;
-      span, i {
-        color: $white
-      }
-    }
-  }
 }
 
 
@@ -512,7 +526,6 @@ a.unlink {
   border-width: 1px;
   padding-left: 5px;
 }
-
 
 .btn-slim {
   font-size: 14px;
@@ -614,6 +627,7 @@ a.unlink {
   right: 20;
 }
 
+
 /*home*/
 
 .voucher-beneficios .fa {
@@ -624,11 +638,12 @@ a.unlink {
 /*fin voucherLista*/
 
 
-
 /*PALETA DE COLORES*/
+
+
 /*Los nombres va a haber que cambiarlos pero son los nuevos colores de Background planteados por Clari*/
 
-.bg-gris{
+.bg-gris {
   background-color: #e9e9e9 !important;
 }
 
@@ -636,7 +651,7 @@ a.unlink {
   background-color: #f7f7f7 !important;
 }
 
-.bg-celeste{
+.bg-celeste {
   background-color: #daf1f8 !important;
 }
 
