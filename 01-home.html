@@ -184,7 +184,7 @@
 
                   <div class="form-group m-t-2 m-b-1">
                     <div class="m-t-0">
-                      <input class="form-control input-sm" type="text" pattern="\d{2}[- ]?\d{8}[- ]?\d{1}"  placeholder="Ingresa el CUIT"  name="cuit">
+                      <input class="form-control input-sm" type="text"  placeholder="Ingresa el CUIT"  name="cuit4">
                     </div>
                   </div>
                
@@ -383,54 +383,61 @@
         $('[data-toggle="popover"]').popover()
     })
 </script>
-<script src="js/validator.min.js"></script>
-<script src="js/formValidation.js"></script>
-<script src="js/formValidation-bootstrap.js"></script>
-<script>
+
 <!-- FormValidator -->
-<script src="js/formValidation.js"></script>
+<script src= "js/formValidation.js"> </script>
 <script src="js/formValidation-bootstrap.js"></script>
 <script>
 $(document).ready(function() {
-    $('#formSimula')
-        .formValidation({
-            framework: 'bootstrap',
-            icon: {
-
-            },
-            fields: {
-                cuit: {
-                    validators: {
-                        notEmpty: {
-                            message: 'Campo requerido.'
-                        },
-                        regexp: {
-                            message: 'Solo dígitos.',
-                            regexp: /^[0-9\.]+/
-                        }
-                    }
-                },
-                vouchers: {
-                    validators: {
-                        notEmpty: {
-                            message: 'Campo requerido.'
-                        },
-                        regexp: {
-                            message: 'Solo dígitos.',
-                            regexp: /^[0-9\.]+$/
-                        },
-                        stringLength: {
-                            message: 'El número de voucher debe tener 6 caracteres',
-                            min: 6,
-                            max: function (value, validator, $field) {
-                                return 6 - (value.match(/\r/g) || []).length;
-                            }
-                        }                        
+   $('#formSimula')
+       .formValidation({
+           framework: 'bootstrap',
+           icon: {
+               //valid: 'glyphicon glyphicon-ok',
+               //invalid: 'glyphicon glyphicon-remove',
+               //validating: 'glyphicon glyphicon-refresh'
+           },
+           fields: {
+               cuit4: {
+                   validators: {
+                       notEmpty: {
+                           message: 'Campo requerido.'
+                       },
+                       regexp: {
+                           message: 'Dígitos sin guiones',
+                           regexp: /^[0-9\.]+$/
+                       },
+stringLength: {
+message: 'Entre 10 y 11 dígitos',
+min: 10,
+max: function (value, validator, $field) {
+return 11 - (value.match(/\r/g) || []).length;
+}
+} 
                    }
-                }
-            }
-        })
+               },
+               voucher: {
+                   validators: {
+                       notEmpty: {
+                           message: 'Campo requerido.'
+                       },
+                       regexp: {
+                           message: 'Solo dígitos.',
+                           regexp: /^[0-9\.]+$/
+                       },
+stringLength: {
+message: '6 caracteres',
+min: 6,
+max: function (value, validator, $field) {
+return 6 - (value.match(/\r/g) || []).length;
+}
+} 
+                   }
+               }
+           }
+       })
 });
+
 </script>
 
 
