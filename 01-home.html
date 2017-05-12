@@ -388,55 +388,55 @@
 <script src= "js/formValidation.js"> </script>
 <script src="js/formValidation-bootstrap.js"></script>
 <script>
-$(document).ready(function() {
+  $(document).ready(function() {
    $('#formSimula')
-       .formValidation({
-           framework: 'bootstrap',
-           icon: {
+   .formValidation({
+     framework: 'bootstrap',
+     icon: {
                //valid: 'glyphicon glyphicon-ok',
                //invalid: 'glyphicon glyphicon-remove',
                //validating: 'glyphicon glyphicon-refresh'
-           },
-           fields: {
+             },
+             fields: {
                cuit4: {
-                   validators: {
-                       notEmpty: {
-                           message: 'Campo requerido.'
-                       },
-                       regexp: {
-                           message: 'Dígitos sin guiones',
-                           regexp: /^[0-9\.]+$/
-                       },
-stringLength: {
-message: 'Entre 10 y 11 dígitos',
-min: 10,
-max: function (value, validator, $field) {
-return 11 - (value.match(/\r/g) || []).length;
-}
-} 
-                   }
-               },
-               voucher: {
-                   validators: {
-                       notEmpty: {
-                           message: 'Campo requerido.'
-                       },
-                       regexp: {
-                           message: 'Solo dígitos.',
-                           regexp: /^[0-9\.]+$/
-                       },
-stringLength: {
-message: '6 caracteres',
-min: 6,
-max: function (value, validator, $field) {
-return 6 - (value.match(/\r/g) || []).length;
-}
-} 
-                   }
-               }
-           }
-       })
-});
+                 validators: {
+                   notEmpty: {
+                     message: 'Campo requerido.'
+                   },
+                   regexp: {
+                     message: 'Dígitos sin guiones',
+                     regexp: /^[0-9\.]+$/
+                   },
+                   stringLength: {
+                    message: 'Entre 10 y 11 dígitos',
+                    min: 10,
+                    max: function (value, validator, $field) {
+                      return 11 - (value.match(/\r/g) || []).length;
+                    }
+                  } 
+                }
+              },
+              vouchers: {
+               validators: {
+                 notEmpty: {
+                   message: 'Campo requerido.'
+                 },
+                 regexp: {
+                   message: 'Solo dígitos.',
+                   regexp: /^[0-9\.]+$/
+                 },
+                 stringLength: {
+                  message: '6 caracteres',
+                  min: 6,
+                  max: function (value, validator, $field) {
+                    return 6 - (value.match(/\r/g) || []).length;
+                  }
+                } 
+              }
+            }
+          }
+        })
+ });
 
 </script>
 
