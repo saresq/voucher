@@ -180,37 +180,36 @@
                 <h3 class="text-center">Validar Voucher</h3>
                 <p class="text-muted"><small>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</small></p>
 
-                <form data-toggle="validator" role="form" novalidate="true"> 
+                <form id="formSimula"> 
+
                   <div class="form-group m-t-2 m-b-1">
-                      <div class="m-t-0">
-                        <input class="form-control input-sm" type="text" placeholder="Ingresa el CUIT"  name="" value="">
+                    <div class="m-t-0">
+                      <input class="form-control input-sm" type="text" pattern="\d{2}[- ]?\d{8}[- ]?\d{1}"  placeholder="Ingresa el CUIT"  name="cuit">
                     </div>
                   </div>
-                </form>
+               
 
-                <form data-toggle="validator" role="form" novalidate="true"> 
-
-                     <div class="form-group has-error has-danger">
-                      <input class="form-control input-sm" type="text" data-minlength="6" placeholder="Número de voucher" required="">
-                      <div class="help-block"> <small>Mínimo de 6 números</small>
-
+                <div class="form-group">
+                  <input class="form-control input-sm" type="text" placeholder="Número de voucher" name="vouchers">
+                  
                   </div>
-
                 </div>
-              </form>
-             
 
               <div class="col-md-offset-1 col-md-10">
                   <div class="panel panel-default bg-gray p-b-4">
                       acá va el recaptcha
                   </div>
               </div>
+                <button class="btn btn-sm btn-success center-block m-b-2" type="submit">VALIDAR</button>
+              </form>
+             
+
 
               <!-- <button class="btn btn-success btn-sm center-block">validar</button> -->
 
 
           </div>
-          <button class="btn btn-sm btn-success center-block" type="submit" data-toggle="modal">VALIDAR</button>
+
       </div>
   </div>
 </div>
@@ -385,6 +384,56 @@
     })
 </script>
 <script src="js/validator.min.js"></script>
+<script src="js/formValidation.js"></script>
+<script src="js/formValidation-bootstrap.js"></script>
+<script>
+<!-- FormValidator -->
+<script src="js/formValidation.js"></script>
+<script src="js/formValidation-bootstrap.js"></script>
+<script>
+$(document).ready(function() {
+    $('#formSimula')
+        .formValidation({
+            framework: 'bootstrap',
+            icon: {
+
+            },
+            fields: {
+                cuit: {
+                    validators: {
+                        notEmpty: {
+                            message: 'Campo requerido.'
+                        },
+                        regexp: {
+                            message: 'Solo dígitos.',
+                            regexp: /^[0-9\.]+/
+                        }
+                    }
+                },
+                vouchers: {
+                    validators: {
+                        notEmpty: {
+                            message: 'Campo requerido.'
+                        },
+                        regexp: {
+                            message: 'Solo dígitos.',
+                            regexp: /^[0-9\.]+$/
+                        },
+                        stringLength: {
+                            message: 'El número de voucher debe tener 6 caracteres',
+                            min: 6,
+                            max: function (value, validator, $field) {
+                                return 6 - (value.match(/\r/g) || []).length;
+                            }
+                        }                        
+                   }
+                }
+            }
+        })
+});
+</script>
+
+
 </body>
 
 </html>
