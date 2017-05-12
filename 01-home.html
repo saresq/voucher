@@ -321,23 +321,29 @@
               </div> -->
               <form id="formodal" class="text-left">
 
-              <div class="form-group col-md-8 col-md-offset-2 m-b-1">
-          
-               <div class="btn-group btn-group-justified btn-sm p-l-0 p-r-0" data-toggle="buttons">
-                 <label href="#" class="btn btn-default btn-sm">
-                   <input type="radio" name="gender" id="female" value="female" class="hidden"> Soy usuario PyME
-                 </label>
-                 <label href="#" class="btn btn-default btn-sm">
-                 <input type="radio" name="gender" id="male" value="male" class="hidden" checked=""> Soy proovedor
-                 </label>
-               </div>
-             </div>
+              <div class="form-group col-md-8 col-md-offset-2 m-b-2">
 
-             <div class="form-group col-md-8 col-md-offset-2 m-b-0">
+
+
+                <div class="btn-group btn-group-justified btn-sm p-l-0 p-r-0 m-b-2" data-toggle="buttons">
+
+
+                  <label href="#" class="btn btn-default btn-sm active">
+                      <input type="radio" name="gender" id="female" value="female" class="hidden"> Soy usuario PyME
+                  </label>
+
+                  <label href="#" class="btn btn-default btn-sm">
+                      <input type="radio" name="gender" id="male" value="male" class="hidden" checked=""> Soy proovedor
+                  </label>
+
+
+                </div>              
+
+             <div class="form-group col-md-12">
               <input type="text" class="form-control input-sm" name="cuit" id="" placeholder="Número de CUIT">
             </div>
-              <div class="form-group col-md-8 col-md-offset-2 m-t-2">
-                <input type="text" class="form-control input-sm"  id="" placeholder="Nro. de Transacción">
+              <div class="form-group col-md-12">
+                <input type="password" class="form-control input-sm" name="pass"  id="" placeholder="Contraseña">
                 <i class="fa fa-info-circle text-muted ayudaModal" data-container="body" data-toggle="popover" data-placement="top" data-content="lorem ipsum sit text ateum totum viscum laravel modum"></i>
               </div>
 
@@ -345,7 +351,7 @@
               <div class="g-recaptcha m-b-3" data-sitekey="">
               </div>
 
-              <div class="col-md-8 col-md-offset-2">
+              <div class="col-md-12">
                 <button type="submit" class="btn btn-success btn-sm col-md-12">INGRESÁ</button>
               </div>
               <div class="col-md-12 text-center">
@@ -457,56 +463,57 @@
 
 <script>
   $(document).ready(function() {
-   $('#formodal')
-   .formValidation({
-     framework: 'bootstrap',
-     icon: {
-               //valid: 'glyphicon glyphicon-ok',
-               //invalid: 'glyphicon glyphicon-remove',
-               //validating: 'glyphicon glyphicon-refresh'
-             },
-             fields: {
-               cuit: {
-                 validators: {
-                   notEmpty: {
-                     message: 'Campo requerido.'
-                   },
-                   regexp: {
-                     message: 'Dígitos sin guiones',
-                     regexp: /^[0-9\.]+$/
-                   },
-                   stringLength: {
-                    message: 'Entre 10 y 11 dígitos',
-                    min: 10,
-                    max: function (value, validator, $field) {
-                      return 11 - (value.match(/\r/g) || []).length;
-                    }
-                  } 
-                }
+    $('#formodal')
+    .formValidation({
+      framework: 'bootstrap',
+      excluded: ':disabled',
+      icon: {
+                //valid: 'glyphicon glyphicon-ok',
+                //invalid: 'glyphicon glyphicon-remove',
+                //validating: 'glyphicon glyphicon-refresh'
               },
-              vouchers: {
-               validators: {
-                 notEmpty: {
-                   message: 'Campo requerido.'
-                 },
-                 regexp: {
-                   message: 'Solo dígitos.',
-                   regexp: /^[0-9\.]+$/
-                 },
-                 stringLength: {
-                  message: '6 caracteres',
-                  min: 6,
-                  max: function (value, validator, $field) {
-                    return 6 - (value.match(/\r/g) || []).length;
+              fields: {
+                cuit: {
+                  validators: {
+                    notEmpty: {
+                      message: 'Campo requerido.'
+                    },
+                    regexp: {
+                      message: 'Digitos sin guiones.',
+                      regexp: /^[0-9\.]+$/
+                    },
+                    stringLength: {
+                      message: 'Entre 10 y 11 digitos.',
+                      min: 10,
+                      max: function (value, validator, $field) {
+                        return 11 - (value.match(/\r/g) || []).length;
+                      }
+                    } 
                   }
-                } 
+                },
+                pass: {
+                  validators: {
+                    notEmpty: {
+                      message: 'Campo requerido.'
+                    }
+                  }
+                },
+                gender: {
+                    validators: {
+                        notEmpty: {
+                            message: 'The gender is required'
+                        }
+                    }
+                }
+
+
+
               }
-            }
-          }
-        })
- });
+            })
+  });
 
 </script>
+
 </body>
 
 </html>
