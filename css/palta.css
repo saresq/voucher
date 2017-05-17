@@ -648,9 +648,14 @@ a.unlink {
   background-color: #e9e9e9 !important;
 }
 
+.text-gris {
+  color: #e9e9e9 !important;
+}
+
 .bg-gclaro {
   background-color: #f7f7f7 !important;
 }
+
 
 .bg-celeste {
   background-color: #daf1f8 !important;
