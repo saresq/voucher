@@ -1,0 +1,30 @@
+body {
+ width:800px;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700);
+
+
+
+.texto{
+width:100%;
+
+font-family: 'Roboto', sans-serif;
+line-height:1.2;
+margin:0px;
+
+}
+
+thead {
+	font-weight: bold;
+}
+
+table {
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
+
+table th, table td {
+	padding:10px !important;
+	border-bottom: 1px solid #EAEAEA;
+}
