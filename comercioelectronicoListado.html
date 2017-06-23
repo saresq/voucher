@@ -1,0 +1,340 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>listaVoucherLogueado</title>
+  <link rel="shortcut icon" href="favicon.ico">
+
+  <!-- STYLE SHEETS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+  <link href="css/roboto-fontface.css" rel="stylesheet">
+  <link href="css/poncho.min.css" rel="stylesheet">
+  <link href="css/palta.css" rel="stylesheet">
+
+</head>
+
+<body class="bg-gclaro">
+
+
+  <header>
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <a class="navbar-brand" style="overflow: visible;" href="#"><img src="./img/logoministerio.png" height="50" alt=""></a>
+            <button type="button" class="navbar-toggle collapsed pull-right" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Burger</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">OFERTAS <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="">Opcion</a></li>
+                  <li><a href="">Opcion</a></li>
+                  <li><a href="">Opcion</a></li>
+                  <li><a href="">Opcion</a></li>
+                  <li><a href="">Opcion</a></li>
+                  <li><a href="">Opcion</a></li>
+                </ul>
+              </li>
+              <li><a href="">PROVEEDORES</a></li>
+              <li><a href="">FINANCIAMIENTO</a></li>
+              <li><a href="">AYUDA</a></li>
+              <li><a href="" class="navMuted">CERRAR SESIÓN</a></li>
+              <a href=""><i class="fa fa-user-circle-o navIco text-muted"></i></a>
+            </ul>
+          </div>
+          <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+      </div>
+    </nav>
+
+  </header>
+
+  <main role="main" class="">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-6">
+
+          <ol class="breadcrumb">
+            <li>1- Ingresá tus datos</li>
+            <li>2- Navegá las ofertas</li>
+            <li class="active">Resultados de búsqueda</li>
+          </ol>
+        </div>
+        <div class="col-md-6 text-right m-t-1">
+          <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-ticket "></i>&nbsp;&nbsp;VER MIS VOUCHERS&nbsp;&nbsp;<span class="badge">1</span></a>
+
+        </div>
+      </div>
+      <div class="row">
+
+        <div id="sidebar" class="col-md-2 hidden-sm-down">
+
+          <nav id="side-nav">
+            <p class="text-muted">Hardware</p>
+
+            <div class="row m-b-1">
+              <div class="col-md-12">
+                <input type="text" class="form-control input-sm menuInput p-r-2">
+                <span class="menuSearchIco"> <i class="fa fa-search text-muted"></i></span>
+              </div>
+            </div>
+
+            <ul class="menuLista">
+              <li>
+                <a class="unlink" data-toggle="collapse" href="#toggleLorem">
+                  <i class="fa fa-caret-down menuListaIco"></i> Lorem
+                </a>
+                <!-- Cuando el ul tiene clase "in"- por defecto aparecera visible, de otro modo estara oculta hasta que no se lleme a data-toggle -->
+                <ul class="menuLista collapse in" id="toggleLorem">
+                  <li><a>ipsum</a></li>
+                  <li><a>spectum</a></li>
+                </ul>
+              </li>
+              <li><a>Ipsum</a></li>
+              <li><a>Spectum</a></li>
+              <li><a>Lorem</a></li>
+              <li><a>Ipsum</a></li>
+              <li><a>Spectum</a></li>
+              <li><a>Lorem</a></li>
+              <li><a>Ipsum</a></li>
+              <li><a>Spectum</a></li>
+            </ul>
+
+            <p class="text-muted">Precio</p>
+
+            <div class="row m-b-1">
+              <div class="col-md-12">
+                <input type="number" class="form-control input-sm menuInputChico" placeholder="Desde">
+                <input type="number" class="form-control input-sm menuInputChico m-l-1 m-b-2" placeholder="Hasta">
+              </div>
+              <div class="col-12 m-b-2">
+                <button class="btn btn-primary btn-slim p-l-2 p-r-2">Filtrar</button>
+              </div>
+              <div class="col-md-12">
+                <p class="text-muted">Marca</p>
+                <div class="checkbox">
+                  <label><input type="checkbox" value="">Option 1</label>
+                </div>
+                <div class="checkbox">
+                  <label><input type="checkbox" value="">Option 2</label>
+                </div>
+                <div class="checkbox disabled">
+                  <label><input type="checkbox" value="" disabled>Option 3</label>
+                </div>
+              </div>
+
+            </div>
+
+
+
+          </nav>
+        </div>
+
+        <div id="content" class="col-md-10">
+
+          <section class="bg-white voucher">
+            <h2><small class="text-primary">Titulo Super Recontra Mega Archi Largo</small></h2>
+            <div class="row">
+
+              <div id="imgArticulo" class="col-md-3 text-center">
+                <img src="http://placehold.it/300x300" alt="" class="img-responsive p-b-2 imgCenter">
+              </div>
+
+              <div id="valArt" class="col-md-3 col-md-push-6">
+                <div class="row">
+                  <div class="col-md-12 col-xs-12">
+                    <h1 class="text-success">$15.000</h1>
+                  </div>
+                  <div class="col-md-8 col-xs-5 p-r-0">
+                    <p><small>Precio al público</small></p>
+                    <h5>$19.000</h5>
+                  </div>
+                  <div class="col-md-4 col-xs-2 p-l-0">
+                    <span class="bg-success descuento">-20%</span>
+                  </div>
+                  <div class="col-md-12 col-xs-5 text-center voucherCantidad">
+                    <p for="cantidad">Cantidad
+                      <input class="cantidad" type="number" name="cantidad" min="1" max="" value="1"></p>
+                  </div>
+                  <div class="col-md-12 col-xs-12">
+                    <button class="btn btn-primary btn-slim btn-block">Agregar Voucher</button>
+                  </div>
+                </div>
+              </div>
+
+              <div id="descArt" class="col-md-6 col-md-pull-3 voucherDescripcion">
+                <ul>
+                  <li><small>Procesador <strong>Intel Core I5-6200U</strong></small></li>
+                  <li><small>Sistema operativo: <strong>Windows 10 Professional 64</strong></small></li>
+                  <li><small>Memoria: <strong>4GB (1x4gb) 2133 DDR4</strong></small></li>
+                  <li><small>Almacenamiento: <strong>HDD 1TB 5400RPM</strong></small></li>
+                  <li><small>Chipset: <strong>Integrated with processor</strong></small></li>
+                  <li><small>Videos: <strong>Intel HD Graphics 510</strong></small></li>
+                  <li><small>Pantalla: <strong>LCD 15.6 LED HD SVA AG f/CAM flat 1Ant</strong></small></li>
+                  <li><small>Tipo de disco: <strong class="">SATA, 7mm/9.5mm, 2.5" Hard Drives</strong></small></li>
+                </ul>
+
+              </div>
+
+            </div>
+
+          </section>
+
+          <section class="bg-white voucher">
+            <h2><small class="text-primary">Titulo Super Recontra Mega Archi Largo</small></h2>
+            <div class="row">
+
+              <div id="imgArticulo" class="col-md-3 text-center">
+                <img src="http://placehold.it/300x300" alt="" class="img-responsive p-b-2 imgCenter">
+              </div>
+
+              <div id="valArt" class="col-md-3 col-md-push-6">
+                <div class="row">
+                  <div class="col-md-12 col-xs-12">
+                    <h1 class="text-success">$15.000</h1>
+                  </div>
+                  <div class="col-md-8 col-xs-5 p-r-0">
+                    <p><small>Precio al público</small></p>
+                    <h5>$19.000</h5>
+                  </div>
+                  <div class="col-md-4 col-xs-2 p-l-0">
+                    <span class="bg-success descuento">-20%</span>
+                  </div>
+                  <div class="col-md-12 col-xs-5 text-center voucherCantidad">
+                    <p for="cantidad">Cantidad
+                      <input class="cantidad" type="number" name="cantidad" min="1" max="" value="1"></p>
+                  </div>
+                  <div class="col-md-12 col-xs-12">
+                    <button class="btn btn-primary btn-slim btn-block">Agregar Voucher</button>
+                  </div>
+                </div>
+              </div>
+
+              <div id="descArt" class="col-md-6 col-md-pull-3 voucherDescripcion">
+                <ul>
+                  <li><small>Procesador <strong>Intel Core I5-6200U</strong></small></li>
+                  <li><small>Sistema operativo: <strong>Windows 10 Professional 64</strong></small></li>
+                  <li><small>Memoria: <strong>4GB (1x4gb) 2133 DDR4</strong></small></li>
+                  <li><small>Almacenamiento: <strong>HDD 1TB 5400RPM</strong></small></li>
+                  <li><small>Chipset: <strong>Integrated with processor</strong></small></li>
+                  <li><small>Videos: <strong>Intel HD Graphics 510</strong></small></li>
+                  <li><small>Pantalla: <strong>LCD 15.6 LED HD SVA AG f/CAM flat 1Ant</strong></small></li>
+                  <li><small>Tipo de disco: <strong class="">SATA, 7mm/9.5mm, 2.5" Hard Drives</strong></small></li>
+                </ul>
+
+              </div>
+
+            </div>
+
+          </section>
+
+
+
+        </div>
+
+      </div>
+    </div>
+
+    <section class=" container-fluid alert-contacto">
+      <div class="container">
+        <div class="col-md-6">
+          <div class="alert bg-white">
+            <div class="media">
+              <div class="media-left v-middle">
+                <i class=" fa fa-phone fa-fw fa-4x text-primary"></i>
+              </div>
+              <div class="media-body">
+                <h4 class="text-primary">0800-999-0209</h4>
+                <p class=" text-muted">Servicio Gratuíto de Orientación y Asesoramiento.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 pull-right">
+          <div class="alert bg-white">
+            <div class="media v-middle">
+              <div class="media-left v-middle">
+                <i class="fa fa-envelope-o fa-inverse fa-fw fa-4x text-primary"></i>
+              </div>
+              <div class="media-body">
+                <p class=" text-muted">¿Tenés una duda? Contactate con nosotros</p>
+                <p class="text-primary "><a class="" href="">info@produccion.gob.ar </a></p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+  </main>
+
+
+  <footer class="main-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <img class="image-responsive" src="img/logoMinisterio.png" alt="Ministerio de Producción">
+          <br>
+          <p class="text-muted small">Los contenidos de Produccion.gob.ar están licenciados bajo <a href="https://creativecommons.org/licenses/by/2.5/ar/">Creative Commons Reconocimiento 2.5 Argentina License</a></p>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div id="nav_menu-3" class="widget_nav_menu">
+            <div class="menu-footer-b-container">
+              <ul id="menu-footer-b" class="menu">
+                <li id="menu-item-152" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-152"><a href="http:/#">El Ministerio</a></li>
+                <li id="menu-item-153" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-153"><a href="http:/#">Trámites</a></li>
+                <li id="menu-item-154" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-154"><a href="http:/#">Sala de Prensa</a></li>
+                <li id="menu-item-155" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-155"><a href="http:/#">Lorem Ipsum</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div id="nav_menu-2" class="widget_nav_menu">
+            <div class="menu-footer-a-container">
+              <ul id="menu-footer-a" class="menu">
+                <li id="menu-item-150" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-150"><a href="http:/#">Lorem Ipsum</a></li>
+                <li id="menu-item-151" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-151"><a href="http:/#">Lorem Ipsum</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="js/jquery.scrollto.js"></script>
+
+  <script type="text/javascript">
+    $(function() {
+      $('[data-toggle="popover"]').popover()
+    })
+
+    $('.collapse').on('shown.bs.collapse', function() {
+      $(this).parent().find(".fa-caret-right").removeClass("fa-caret-right").addClass("fa-caret-down");
+    }).on('hidden.bs.collapse', function() {
+      $(this).parent().find(".fa-caret-down").removeClass("fa-caret-down").addClass("fa-caret-right");
+    });
+  </script>
+</body>
+
+</html>
