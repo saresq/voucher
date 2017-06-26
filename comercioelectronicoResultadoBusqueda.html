@@ -72,7 +72,8 @@
           <li class="active">Resultados de búsqueda</li>
         </ol>
 
-        <div id="sidebar" class="col-md-2 col-lg-2">
+        <div id="sidebar" class="col-md-2 hidden-sm-down">
+
           <nav id="side-nav">
             <p class="text-muted">Hardware</p>
 
@@ -107,22 +108,26 @@
             <p class="text-muted">Precio</p>
 
             <div class="row m-b-1">
+              <div class="col-md-12">
                 <input type="number" class="form-control input-sm menuInputChico" placeholder="Desde">
                 <input type="number" class="form-control input-sm menuInputChico m-l-1 m-b-2" placeholder="Hasta">
-                <div class="clearfix"></div>
+              </div>
+              <div class="col-md-12 m-b-2">
                 <button class="btn btn-primary btn-slim p-l-2 p-r-2">Filtrar</button>
-                <button class="btn btn-primary btn-slim p-l-2 p-r-2">Limpiar</button>
-                <div class="clearfix"></div>
+              </div>
+              <div class="col-md-12">
                 <p class="text-muted">Marca</p>
                 <div class="checkbox">
-                	<label><input type="checkbox" value="">Option 1</label>
+                  <label><input type="checkbox" value="">Option 1</label>
                 </div>
                 <div class="checkbox">
-                	<label><input type="checkbox" value="">Option 2</label>
+                  <label><input type="checkbox" value="">Option 2</label>
                 </div>
                 <div class="checkbox disabled">
-                	<label><input type="checkbox" value="" disabled>Option 3</label>
+                  <label><input type="checkbox" value="" disabled>Option 3</label>
                 </div>
+              </div>
+
             </div>
 
 
@@ -130,7 +135,7 @@
           </nav>
         </div>
 
-        <div id="content" class="col-md-10 col-lg-10">
+        <div id="content" class="col-md-10">
 
           <section class="bg-white voucher">
             <h2><small class="text-primary">Titulo Super Recontra Mega Archi Largo</small></h2>
@@ -294,35 +299,21 @@
 </div>
 </footer>
 
-
-  <div id="myModal" class="modal fade" tabindex="-1" role="dialog">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-body">
-          <div class="row">
-            <div class="col-md-12 text-center">
-              <h4>Ingresá tus datos para continuar</h4>
-              <p>Quisque sollicitudin sit amet magna</p>
-              
-                <div class="col-md-10 col-md-push-1">
-                    <div class="btn-group btn-group-justified" data-toggle="buttons">
-                      <label href="#" class="btn btn-default">
-                      <input class="text-center" type="radio" name="yesNo" id="si" value="si" data-fv-field="yesNo">Soy usuario PyME
-                        </label>
-                      <label href="#" class="btn btn-default">
-                      <input type="radio" name="yesNo" id="no" value="no" class="hidden" checked="" data-fv-field="yesNo">Soy proveedor
-                       </label>
-                    </div>
-                </div>              
-              
-
-              <div class="form-group col-md-10 col-md-offset-1 m-t-2 m-b-0">
-                <input type="text" class="form-control input-sm" id="" placeholder="Número de CUIT">
-              </div>
-              <div class="form-group col-md-10 col-md-offset-1 m-t-2">
-                <input type="text" class="form-control input-sm" id="" placeholder="Nro. de Transacción">
-                <i class="fa fa-info-circle text-muted ayudaModal" data-container="body" data-toggle="popover" data-placement="top" data-content="lorem ipsum sit text ateum totum viscum laravel modum"></i>
-              </div>
+<div id="myModal" class="modal fade" tabindex="-1" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h4>Ingresá tus datos para continuar</h4>
+            <p>Quisque sollicitudin sit amet magna</p>
+            <!--               <div class="col-md-6 col-md-push-1">
+              <label class="radio-inline"><input type="radio" name="optradio">Soy usuario PyME</label>
+            </div>
+            <div class="col-md-6 col-md-pull-1">
+              <label class="radio-inline"><input type="radio" name="optradio">Soy proveedor <i class="fa fa-info-circle text-muted" data-container="body" data-toggle="popover" data-placement="top" data-content="lorem ipsum sit text ateum totum viscum laravel modum"></i></label>
+            </div> -->
+            <form id="formodal" class="text-left">
 
               <div class="form-group col-md-8 col-md-offset-2 m-b-2">
 

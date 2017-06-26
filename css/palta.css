@@ -4,7 +4,6 @@ html {
   overflow-x: hidden
 }
 
-
 /*FIXES A STYLES.CSS*/
 
 .video-row {
@@ -28,7 +27,8 @@ html {
 }
 
 .numberdiv {
-  flex-flow: column
+  flex-flow: column;
+  text-align: center;
 }
 
 .iconoTexto, .panelIcono {
@@ -79,6 +79,11 @@ section .row {
   background-color: transparent
 }
 
+blockquote {
+  margin: 0;
+  text-align: center;
+}
+
 article {
   margin: -30px 0 0!important;
   padding: 30px 0 0!important;
@@ -97,7 +102,6 @@ img.img-responsive {
   max-height: none!important;
   min-height: none!important
 }
-
 .social-share {
   margin: 0;
   min-height: 32px
@@ -158,27 +162,26 @@ a img.aligncenter {
 
 
 /*FIXES DE SAFARI*/
-
 .row:after, .row:before {
   width: 0;
   content: ""
 }
 
-
 /*MOBILE FIXES*/
-
 @media (max-width:767px) {
   .video-row {
     flex-flow: column
   }
 }
 
-
 /*HEADER*/
-
 .menuLista {
   list-style: none;
   padding-left: 1rem;
+  padding-bottom: 0.5rem;
+}
+.menuLista-item{
+  padding-top: 0.5rem;
 }
 
 .menuLista>li {
@@ -227,46 +230,27 @@ a img.aligncenter {
   background-image: none
 }
 
+.btn-search{
+  margin-bottom: 0 !important;
+    height: 54px !important;
+}
+
 .navbar .navbar-brand {
   padding: 10px 0
 }
 
-a.navMuted {
-  color: #333 !important;
-  text-decoration: none;
+.navbar li{
+  padding-bottom: 0 !important;
 }
 
-a.navMuted:hover, .navMuted:focus {
-  color: #fff !important;
-}
-
-@media (min-width:768px) {
-  .navIco {
+/*Icono al final de input*/
+.fa-input {
     position: absolute;
-    top: 20px;
-    font-size: 2em;
-  }
-  .navIco:hover, .navIco:focus {
-    color: #0695d6;
-  }
+    top: 0.45em;
+    z-index: 2;
+    right: 1.5em;
 }
-
-@media (max-width:768px) {
-  .navIco {
-    padding-left: 10px;
-    font-size: 1.5em;
-  }
-  .navIco:hover, .navIco:focus {
-    color: #0695d6;
-  }
-}
-
-
 /*CONTACT FORM 7*/
-
-.form-group input {
-  color: #111!important
-}
 
 .alert-success, .alert-warning {
   color: #333!important
@@ -309,7 +293,6 @@ a.navMuted:hover, .navMuted:focus {
 
 
 /*PONCHOBOT*/
-
 #htmlCode {
   user-select: all;
   background: #202020;
@@ -333,9 +316,7 @@ nav.stick {
   margin-top: 12px
 }
 
-
 /*MAP*/
-
 .map {
   -webkit-filter: grayscale(70%);
   -moz-filter: grayscale(70%);
@@ -346,16 +327,15 @@ nav.stick {
 
 .maps {
   height: 60vh;
-  overflow: hidden
+  overflow: hidden;
+  margin-bottom: -47px;
 }
 
 .maps iframe {
   pointer-events: none
 }
 
-
 /*TABLE*/
-
 .table-row {
   display: table-row;
   background-color: rgba(6, 149, 214, .7)
@@ -397,9 +377,7 @@ nav.stick {
   }
 }
 
-
 /*CAROUSEL*/
-
 .carouselBotons {
   position: absolute;
   top: 40%
@@ -451,7 +429,6 @@ nav.stick {
   outline: 0!important
 }
 
-
 /* Overlap Div para Plantilla Noticia*/
 
 @media (min-width: 1024px) {
@@ -480,7 +457,6 @@ nav.stick {
   height: 30px !important;
   outline: 0px !important;
 }
-
 
 /* Flecha para ir al top de la pag. */
 
@@ -526,6 +502,7 @@ a.unlink {
   border-width: 1px;
   padding-left: 5px;
 }
+
 
 .btn-slim {
   font-size: 14px;
@@ -627,7 +604,6 @@ a.unlink {
   right: 20;
 }
 
-
 /*home*/
 
 .voucher-beneficios .fa {
@@ -635,16 +611,14 @@ a.unlink {
 }
 
 
-
 /*fin voucherLista*/
 
 
+
 /*PALETA DE COLORES*/
-
-
 /*Los nombres va a haber que cambiarlos pero son los nuevos colores de Background planteados por Clari*/
 
-.bg-gris {
+.bg-gris{
   background-color: #e9e9e9 !important;
 }
 
@@ -652,7 +626,12 @@ a.unlink {
   background-color: #f7f7f7 !important;
 }
 
-.bg-celeste {
+.bg-default {
+  background-color: #767676 !important;
+  color: #ffffff;
+}
+
+.bg-celeste{
   background-color: #daf1f8 !important;
 }
 
@@ -700,8 +679,37 @@ a.unlink {
   color: #7e62b3;
 }
 
+.text-blanco {
+  color: #ffffff !important;
+}
 
+.bg-modal{
+  background: #F9F9F9;
+    border-radius: 4px;
+    box-shadow: 0 0 10px -4px black;
+    padding: 20px;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+@media (max-width:768px) {
+  .bg-modal{
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
 /*FUNCIONES DE BOOTSTRAP V4*/
+
+.align-middle{
+      vertical-align: middle!important;
+}
+
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+}
 
 @media (max-width:575px) {
   .hidden-xs-down {
@@ -777,5 +785,72 @@ a.unlink {
   }
   .hidden-print {
     display: none!important
+  }
+}
+
+/*MEDIA KIT*/
+.mediakit-img img{
+  width: 100%;
+  height: auto;
+}
+
+.subrayado{
+  text-decoration: underline;
+}
+
+/* FIX para paneles con iconos font awesome, utilizandose con iconos Argob */
+
+.fa-con-ia{
+  padding-top: 28px;
+  padding-bottom: 27px;
+}
+
+/*Circulo con texto centrado*/
+/*mobile*/
+@media (max-width:767px) {
+  .circulo {
+    color: #fff;
+    text-align: center;
+    margin: 20px auto;
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    padding-top: 1.25rem;
+    display: block;
+    font-weight: bold;
+  }
+  .circulo h1 {
+    font-size: 3rem;
+    padding: 0px;
+    margin: 0px;
+  }
+  .circulo h6 {
+    font-size: 1rem;
+    padding: 0px;
+    margin: 0px;
+  }
+}
+/*tblt desktop*/
+@media (min-width:768px) {
+  .circulo {
+    color: #fff;
+    text-align: center;
+    margin: 20px auto;
+    width: 11rem;
+    height: 11rem;
+    border-radius: 50%;
+    padding-top: 2.25rem;
+    display: block;
+    font-weight: bold;
+  }
+  .circulo h1 {
+    font-size: 4rem;
+    padding: 0px;
+    margin: 0px;
+  }
+  .circulo h6 {
+    font-size: 1.5rem;
+    padding: 0px;
+    margin: 0px;
   }
 }
