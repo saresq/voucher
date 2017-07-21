@@ -1,0 +1,517 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>formProveedor</title>
+  <link rel="shortcut icon" href="favicon.ico">
+
+  <!-- STYLE SHEETS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+  <link href="css/roboto-fontface.css" rel="stylesheet">
+  <link href="css/poncho.min.css" rel="stylesheet">
+  <link href="css/palta.css" rel="stylesheet">
+
+
+</head>
+
+<body class="bg-gclaro">
+
+
+  <header>
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <a class="navbar-brand" style="overflow: visible;" href="#"><img src="./img/logoministerio.png" height="50" alt=""></a>
+            <button type="button" class="navbar-toggle collapsed pull-right" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Burger</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">OFERTAS <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="">Opcion</a></li>
+                  <li><a href="">Opcion</a></li>
+                  <li><a href="">Opcion</a></li>
+                  <li><a href="">Opcion</a></li>
+                  <li><a href="">Opcion</a></li>
+                  <li><a href="">Opcion</a></li>
+                </ul>
+              </li>
+              <li><a href="">PROVEEDORES</a></li>
+              <li><a href="">FINANCIAMIENTO</a></li>
+              <li><a href="">AYUDA</a></li>
+              <li><a href="" class="navMuted">CERRAR SESIÓN</a></li>
+              <a href=""><i class="fa fa-user-circle-o navIco text-muted"></i></a>
+            </ul>
+          </div>
+          <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+      </div>
+    </nav>
+
+  </header>
+
+  <main role="main" class="">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-6">
+
+          <ol class="breadcrumb">
+            <li>1- Ingresá tus datos</li>
+            <li>2- Navegá las ofertas</li>
+            <li class="active">Resultados de búsqueda</li>
+          </ol>
+        </div>
+
+      </div>
+      <div class="row">
+        <section class="container">
+
+          <form id="formvoucher">
+
+            <div class="form-group">
+              <h6>Familia:</h6>
+              <select class="form-control" name="familia"><option value="">Seleccione</option></select>
+            </div>
+
+            <div class="form-group">
+              <h6>Marca:</h6>
+              <select class="form-control" name="marca"><option value="">Seleccione</option></select>
+            </div>
+
+            <div class="form-group m-t-2 m-b-1">
+              <h6>Nombre del producto:</h6>
+              <input class="form-control" type="text" name="nombreprod">
+            </div>
+
+            <div class="form-group">
+              <h6>Descripción:</h6>
+              <textarea class="form-control" rows="5" id="comment" name="descripcion"></textarea>
+            </div>
+
+            <div class="form-group m-t-2 m-b-1">
+              <h6>Código interno:</h6>
+              <input class="form-control" type="text" name="codigoInterno">
+            </div>
+
+            <div class="form-group m-t-2 m-b-1">
+              <h6>Stock:</h6>
+              <input class="form-control" type="text" name="stock">
+            </div>
+
+            <div class="form-group m-t-2 m-b-1">
+              <h6>Costo de envío incluído:</h6>
+              <span class="btn-group btn-group-justified" data-toggle="buttons">
+                <span class="btn btn-default first p-t-1">
+                <label>
+                  <input type="radio" value="si" name="costoEnvio">
+                  <span>SI</span>
+              </label>
+              </span>
+              <span class="btn btn-default last p-t-1">
+              <label>
+                <input type="radio" value="no" name="costoEnvio">
+                <span>NO</span>
+              </label>
+              </span>
+              </span>
+            </div>
+
+            <div class="form-group m-t-2 m-b-1">
+              <h6>Precio al público:</h6>
+              <input class="form-control" type="text" name="precioPublico">
+            </div>
+
+            <div class="form-group m-t-2 m-b-1">
+              <h6>Precio Plan PyMEs:</h6>
+              <input class="form-control" type="text" name="precioPyme">
+            </div>
+
+            <div class="form-group m-t-2 m-b-1">
+              <h6>Garantía:</h6>
+              <input class="form-control" type="text" name="garantia">
+            </div>
+
+            <div class="form-group">
+              <h6>Adjuntar archivo:</h6>
+              <input type="file" id="exampleInputFile" class="filestyle" data-buttonName="btn-primary" data-icon="false" data-buttonText="Seleccionar" data-placeholder="Sin Archivo" name="archivo">
+            </div>
+
+            <!--  Campos para Computadoras  -->
+            <div class="form-group m-t-2 m-b-1">
+              <h6>Modelo:</h6>
+              <input class="form-control" type="text" name="compuModelo">
+            </div>
+
+            <div class="form-group m-t-2 m-b-1">
+              <h6>Procesador:</h6>
+              <input class="form-control" type="text" name="compuProcesador">
+            </div>
+
+            <div class="form-group m-t-2 m-b-1">
+              <h6>Sistema operativo:</h6>
+              <input class="form-control" type="text" name="compuSO">
+            </div>
+
+            <div class="form-group m-t-2 m-b-1">
+              <h6>Memoria RAM:</h6>
+              <input class="form-control" type="text" name="compuRam">
+            </div>
+
+            <div class="form-group m-t-2 m-b-1">
+              <h6>Almacenamiento:</h6>
+              <input class="form-control" type="text" name="compuAlmacenamiento">
+            </div>
+
+            <div class="form-group m-t-2 m-b-1">
+              <h6>Chipset:</h6>
+              <input class="form-control" type="text" name="compuChip">
+            </div>
+
+            <div class="form-group m-t-2 m-b-1">
+              <h6>Video:</h6>
+              <input class="form-control" type="text" name="compuVideo">
+            </div>
+
+            <div class="form-group m-t-2 m-b-1">
+              <h6>Pantalla:</h6>
+              <input class="form-control" type="text" name="compuPantalla">
+            </div>
+
+            <div class="form-group m-t-2 m-b-1">
+              <h6>Tipo de disco:</h6>
+              <input class="form-control" type="text" name="compuTipoDisco">
+            </div>
+
+            <!--  Campos para Impresoras  -->
+            <div class="form-group m-t-2 m-b-1">
+              <h6>Modelo:</h6>
+              <input class="form-control" type="text" name="impModelo">
+            </div>
+
+            <div class="form-group m-t-2 m-b-1">
+              <h6>Tipo:</h6>
+              <span class="btn-group btn-group-justified" data-toggle="buttons">
+                <span class="btn btn-default first p-t-1">
+                <label>
+                  <input type="radio" value="" checked="checked" name="impTipo">
+                  <span>Laser</span>
+              </label>
+              </span>
+              <span class="btn btn-default last p-t-1">
+              <label>
+                <input type="radio" value="" name="impTipo">
+                <span>Tinta</span>
+              </label>
+              </span>
+              </span>
+            </div>
+
+            <div class="form-group m-t-2 m-b-1">
+              <h6>Páginas por minuto (PPM):</h6>
+              <input class="form-control" type="text" name="impPpm">
+            </div>
+
+            <div class="form-group m-t-2 m-b-1">
+              <h6>Inalámbrica:</h6>
+              <span class="btn-group btn-group-justified" data-toggle="buttons">
+                <span class="btn btn-default first p-t-1">
+                <label>
+                  <input type="radio" value="" checked="checked" name="impInalambrica">
+                  <span>Si</span>
+              </label>
+              </span>
+              <span class="btn btn-default last p-t-1">
+              <label>
+                <input type="radio" value="" name="impInalambrica">
+                <span>No</span>
+              </label>
+              </span>
+              </span>
+            </div>
+
+            <div class="form-group m-t-2 m-b-1">
+              <h6>Color:</h6>
+              <span class="btn-group btn-group-justified" data-toggle="buttons">
+                <span class="btn btn-default first p-t-1">
+                <label>
+                  <input type="radio" value="" checked="checked" name="impColor">
+                  <span>Si</span>
+              </label>
+              </span>
+              <span class="btn btn-default last p-t-1">
+              <label>
+                <input type="radio" value="" name="impColor">
+                <span>No</span>
+              </label>
+              </span>
+              </span>
+            </div>
+
+            <div class="form-group m-t-2 m-b-1">
+              <h6>Doble cara:</h6>
+              <span class="btn-group btn-group-justified" data-toggle="buttons">
+                <span class="btn btn-default first p-t-1">
+                <label>
+                  <input type="radio" value="" checked="checked" name="impDoblecara">
+                  <span>Si</span>
+              </label>
+              </span>
+              <span class="btn btn-default last p-t-1">
+              <label>
+                <input type="radio" value="" name="impDoblecara">
+                <span>No</span>
+              </label>
+              </span>
+              </span>
+            </div>
+
+            <!--  Campos para Monitores  -->
+            <div class="form-group m-t-2 m-b-1">
+              <h6>Modelo:</h6>
+              <input class="form-control" type="text" name="monitorModelo">
+            </div>
+
+            <div class="form-group m-t-2 m-b-1">
+              <h6>Tipo:</h6>
+              <span class="btn-group btn-group-justified" data-toggle="buttons">
+                <span class="btn btn-default first p-t-1">
+                <label>
+                  <input type="radio" value="" checked="checked" name="monitorTipo">
+                  <span>LED</span>
+              </label>
+              </span>
+              <span class="btn btn-default last p-t-1">
+              <label>
+                <input type="radio" value="" name="monitorTipo">
+                <span>LCD</span>
+              </label>
+              </span>
+              </span>
+            </div>
+
+            <div class="form-group m-t-2 m-b-1">
+              <h6>Tiempo de respuesta:</h6>
+              <input class="form-control" type="text" name="monitorTiemporesp">
+            </div>
+
+            <div class="form-group m-t-2 m-b-1">
+              <h6>Resolución máxima:</h6>
+              <input class="form-control" type="text" name="monitorMaxReso">
+            </div>
+
+            <div class="form-group m-t-2 m-b-1">
+              <h6>Tipo de entrada/s:</h6>
+              <input class="form-control" type="text" name="monitorTipoEntrada">
+            </div>
+
+            <!--  Campos para Otros  -->
+            <div class="form-group m-t-2 m-b-1">
+              <h6>Modelo:</h6>
+              <input class="form-control" type="text" name="otroModelo">
+            </div>
+
+            <div class="form-group m-t-2 m-b-1">
+              <h6>Descripción:</h6>
+              <input class="form-control" type="text" name="otroDesc">
+            </div>
+
+            <!--  Campos para Proyectores  -->
+            <div class="form-group m-t-2 m-b-1">
+              <h6>Modelo:</h6>
+              <input class="form-control" type="text" name="proyecModelo">
+            </div>
+
+            <div class="form-group m-t-2 m-b-1">
+              <h6>Tipo:</h6>
+              <span class="btn-group btn-group-justified" data-toggle="buttons">
+                <span class="btn btn-default first p-t-1">
+                <label>
+                  <input type="radio" value="" checked="checked" name="proyecTipo">
+                  <span>LED</span>
+              </label>
+              </span>
+              <span class="btn btn-default last p-t-1">
+              <label>
+                <input type="radio" value="" name="proyecTipo">
+                <span>Lámpara</span>
+              </label>
+              </span>
+              </span>
+            </div>
+
+            <div class="form-group m-t-2 m-b-1">
+              <h6>Duración lámpara:</h6>
+              <input class="form-control" type="text" name="proyecDuracion">
+            </div>
+
+            <div class="form-group m-t-2 m-b-1">
+              <h6>Entradas HDMI:</h6>
+              <input class="form-control" type="text" name="proyecHDMI">
+            </div>
+
+            <div class="form-group m-t-2 m-b-1">
+              <h6>Contraste:</h6>
+              <input class="form-control" type="text" name="proyecContraste">
+            </div>
+
+            <div class="form-group m-t-2 m-b-1">
+              <h6>Compatible con TV:</h6>
+              <span class="btn-group btn-group-justified" data-toggle="buttons">
+                <span class="btn btn-default first p-t-1">
+                <label>
+                  <input type="radio" value="" checked="checked" name="proyecComp">
+                  <span>Si</span>
+              </label>
+              </span>
+              <span class="btn btn-default last p-t-1">
+              <label>
+                <input type="radio" value="" name="proyecComp">
+                <span>No</span>
+              </label>
+              </span>
+              </span>
+            </div>
+
+            <!--  Campos para Tablets  -->
+            <div class="form-group m-t-2 m-b-1">
+              <h6>Modelo:</h6>
+              <input class="form-control" type="text" name="tabModelo">
+            </div>
+
+            <div class="form-group m-t-2 m-b-1">
+              <h6>Tamaño de pantalla:</h6>
+              <input class="form-control" type="text" name="tabTamaño">
+            </div>
+
+            <div class="form-group m-t-2 m-b-1">
+              <h6>Tipo de pantalla:</h6>
+              <input class="form-control" type="text" name="tabTipoPant">
+            </div>
+
+            <div class="form-group m-t-2 m-b-1">
+              <h6>Memoria RAM:</h6>
+              <input class="form-control" type="text" name="tabRam">
+            </div>
+
+            <div class="form-group m-t-2 m-b-1">
+              <h6>Memoria Interna:</h6>
+              <input class="form-control" type="text" name="tabAlmacenamiento">
+            </div>
+
+            <div class="form-group m-t-2 m-b-1">
+              <h6>Soporte memoria externa:</h6>
+              <input class="form-control" type="text" name="tabSd">
+            </div>
+
+            <div class="form-group m-t-2 m-b-1">
+              <h6>Sistema operativo:</h6>
+              <input class="form-control" type="text" name="tabSo">
+            </div>
+
+            <div class="form-group m-t-2 m-b-1">
+              <h6>Resolución:</h6>
+              <input class="form-control" type="text" name="tabReso">
+            </div>
+
+            <div class="form-group m-t-2 m-b-1">
+              <h6>Cámara frontal:</h6>
+              <input class="form-control" type="text" name="tabCamFront">
+            </div>
+
+            <div class="form-group m-t-2 m-b-1">
+              <h6>Resolución cámara posterior:</h6>
+              <input class="form-control" type="text" name="tabCamPost">
+            </div>
+
+            <div class="form-group m-t-2 m-b-1">
+              <h6>GPS:</h6>
+              <span class="btn-group btn-group-justified" data-toggle="buttons">
+                <span class="btn btn-default first p-t-1">
+                <label>
+                  <input type="radio" value="" checked="checked" name="tabGps">
+                  <span>Si</span>
+              </label>
+              </span>
+              <span class="btn btn-default last p-t-1">
+              <label>
+                <input type="radio" value="" name="tabGps">
+                <span>No</span>
+              </label>
+              </span>
+              </span>
+            </div>
+
+            <button class="btn btn-primary center-block m-b-2" type="submit">Enviar</button>
+
+          </form>
+        </section>
+      </div>
+    </div>
+
+
+  </main>
+
+
+  <footer class="main-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <img class="image-responsive" src="img/logoministerio.png" alt="Ministerio de Producción">
+          <br>
+          <p class="text-muted small">Los contenidos de Produccion.gob.ar están licenciados bajo <a href="https://creativecommons.org/licenses/by/2.5/ar/">Creative Commons Reconocimiento 2.5 Argentina License</a></p>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div id="nav_menu-3" class="widget_nav_menu">
+            <div class="menu-footer-b-container">
+              <ul id="menu-footer-b" class="menu">
+                <li id="menu-item-152" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-152"><a href="http:/#">El Ministerio</a></li>
+                <li id="menu-item-153" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-153"><a href="http:/#">Trámites</a></li>
+                <li id="menu-item-154" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-154"><a href="http:/#">Sala de Prensa</a></li>
+                <li id="menu-item-155" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-155"><a href="http:/#">Lorem Ipsum</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div id="nav_menu-2" class="widget_nav_menu">
+            <div class="menu-footer-a-container">
+              <ul id="menu-footer-a" class="menu">
+                <li id="menu-item-150" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-150"><a href="http:/#">Lorem Ipsum</a></li>
+                <li id="menu-item-151" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-151"><a href="http:/#">Lorem Ipsum</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="./js/bootstrap-filestyle.min.js" type="text/javascript"></script>
+  <script src="js/bootstrap.min.js" type="text/javascript"></script>
+
+  <!-- FormValidator -->
+  <script src="js/formValidation.js">
+  </script>
+  <script src="js/formValidation-bootstrap.js"></script>
+  <script src="js/formProveedorValidacion.js"></script>
+
+</body>
+
+</html>
